@@ -19,3 +19,20 @@ console.table([fullName, age, mailId])
 
 console.log(typeof undefined)
 console.log(typeof null);
+
+//Primitive
+// 7 Types: String, Number, Boolean, null, BigInt, undefined, Symbol
+
+const score = 100;
+
+// Reference( Non Primitive)
+// Array, Objects, Functions
+
+const sahaba = ["Abubakkar", "Umar", "Usman", "Ali"];
+let myObj = {
+    usernName: "Masyud",
+    age: 25
+}
+console.log(myObj);
+console.log(sahaba);
+
