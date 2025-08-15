@@ -1,0 +1,2 @@
+# JavaScriptJourney
+JavaScript Language learning 
