@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="title">Hello World</h1>
+    <button onclick="toggleText()">Click Me</button>
+
+    <script>
+        let isChanged = false; // state tracker
+
+        function toggleText() {
+            let element = document.getElementById("title");
+
+            if (!isChanged) {
+                element.innerText = "Text Changed!";
+                isChanged = true;
+            } else {
+                element.innerText = "Hello World"; // previous/original text
+                isChanged = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
