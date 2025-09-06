@@ -1,0 +1,136 @@
+/* General style */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
+    color: #333;
+}
+
+h1 {
+    color: #00695c;
+    margin-bottom: 30px;
+}
+
+.img-container img {
+    width: 250px;
+    /* Fixed width */
+    height: 180px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Crop without distortion */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.img-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Button */
+button {
+    background: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #004d40;
+}
+
+/* Image */
+.img-container img {
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Input */
+#myInput {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    margin: 15px;
+    transition: border-color 0.3s;
+}
+
+#myInput:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+/* Hover box */
+#hoverBox {
+    width: 250px;
+    height: 120px;
+    margin: 20px auto;
+    background: lightblue;
+    line-height: 120px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+#hoverBox:hover {
+    transform: scale(1.05);
+}
+
+/* Double click text */
+#dblPara {
+    cursor: pointer;
+    margin: 20px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Right-click text */
+#rightClick {
+    margin: 20px;
+    font-weight: bold;
+    cursor: context-menu;
+    color: #004d40;
+}
+
+/* Scroll area */
+#scrollArea {
+    width: 320px;
+    height: 150px;
+    margin: 20px auto;
+    overflow-y: scroll;
+    border: 2px solid #00796b;
+    text-align: left;
+    padding: 10px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-content {
+    height: 400px;
+}
+
+/* Form */
+form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    margin-right: 8px;
+}
+
+form button {
+    padding: 10px 18px;
+}

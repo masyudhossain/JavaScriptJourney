@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Events Practice (Styled)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>✨ JavaScript Events Playground ✨</h1>
+
+    <!-- Button -->
+    <button id="btnClick">Click Me</button>
+
+    <!-- Image -->
+    <div class="img-container">
+        <img id="myImage" src="nature.png" alt="Nature">
+    </div>
+
+    <!-- Input field -->
+    <input type="text" id="myInput" placeholder="Type something...">
+
+    <!-- Hover box -->
+    <div id="hoverBox">Hover over me!</div>
+
+    <!-- Double click -->
+    <p id="dblPara">Double-click this text to change color.</p>
+
+    <!-- Form -->
+    <form id="myForm">
+        <input type="text" placeholder="Enter your name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Keyboard events -->
+    <p>Press any key: <span id="keyOutput">None</span></p>
+
+    <!-- Dropdown for change event -->
+    <select id="mySelect">
+        <option value="">Choose a color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <p>Selected color: <span id="selectedColor">None</span></p>
+
+    <!-- Right click -->
+    <p id="rightClick">👉 Right-click me to see magic ✨</p>
+
+    <!-- Scroll area -->
+    <div id="scrollArea">
+        <p>Scroll inside this box 👇</p>
+        <div class="scroll-content">
+            <p>Keep scrolling...</p>
+            <p>More content...</p>
+            <p>Even more content...</p>
+            <p>Almost there...</p>
+            <p>You reached the end! 🎉</p>
+        </div>
+    </div>
+
+    <p id="resizeOutput">Window size: </p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
