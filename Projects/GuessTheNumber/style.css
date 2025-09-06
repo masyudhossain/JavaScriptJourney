@@ -1,0 +1,140 @@
+:root {
+    --bg: #0f172a;
+    --card: #111827;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --accent: #22c55e;
+    --warn: #f59e0b;
+    --error: #ef4444;
+    --btn: #2563eb;
+    --btn2: #374151;
+    --radius: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(1200px 800px at 70% 10%, #111827, var(--bg));
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+
+.card {
+    width: min(560px, 92vw);
+    background: var(--card);
+    border: 1px solid #1f2937;
+    border-radius: var(--radius);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+    padding: 28px;
+}
+
+h1 {
+    margin: 0 0 6px;
+    font-size: 1.7rem;
+}
+
+.sub {
+    margin: 0 0 20px;
+    color: var(--muted);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    background: #0b1220;
+    color: var(--text);
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    background: var(--btn);
+    cursor: pointer;
+    transition: transform .04s ease, opacity .2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+button.secondary {
+    background: var(--btn2);
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin: 6px 0 12px;
+}
+
+#feedback {
+    margin: 0;
+}
+
+#feedback.ok {
+    color: var(--accent);
+}
+
+#feedback.high,
+#feedback.low {
+    color: var(--warn);
+}
+
+#feedback.end {
+    color: var(--error);
+}
+
+.history h2 {
+    font-size: 1.05rem;
+    margin: 14px 0 8px;
+    color: var(--muted);
+}
+
+#guessesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#guessesList li {
+    padding: 6px 10px;
+    border: 1px solid #334155;
+    border-radius: 999px;
+    background: #0b1220;
+    color: #cbd5e1;
+    font-size: .95rem;
+}
